@@ -5,4 +5,6 @@ require 'sinatra'
 get '/' do
 	send_file 'app/index.html'
 end
-
+get '/videojs' do
+	send_file 'app/partials/videojs.html'
+end

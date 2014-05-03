@@ -3,5 +3,6 @@ require 'rubygems'
 require 'sinatra'
 
 get '/' do
+	send_file 'app/index.html'
 end
 
