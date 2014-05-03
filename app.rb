@@ -8,3 +8,6 @@ end
 get '/videojs' do
 	send_file 'app/partials/videojs.html'
 end
+get '/jPlayer' do
+	send_file 'app/partials/jPalyer.html'
+end
