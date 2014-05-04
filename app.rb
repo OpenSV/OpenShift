@@ -11,3 +11,7 @@ end
 get '/jPlayer' do
 	send_file 'app/partials/jPlayer.html'
 end
+get '/*' do
+        send_file "#{params[:splat][0]}"
+end
+
