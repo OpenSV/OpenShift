@@ -1,22 +1,11 @@
-<html>
-	<body>
-	<h1>Hello World!</h1>
-	<p>Welcome to the <a href="http://www.opensv.com/">OpenSV</a> - OpenSource Video - demo page</p>
-	<p>Currently there are two supported Players and one JavaScript Plugin with OpenSV:<br>
-		<ul>
-			<li><a href="http://demo.opensv.com/jPlayer">jPlayer</a>
-			<li><a href="http://demo.opensv.com/popcornjs">popcorn-js</a>
-			<li><a href="http://demo.opensv.com/videojs">videojs</a>
-		</ul>
-	</p>
-	<p>We encourage you to visit the home pages of each project included in OpenSV and star their projects Github repositories:<br>
-		<ul>
-			<li><a href="https://github.com/happyworm/jPlayer">https://github.com/happyworm/jPlayer</a>
-			<li><a href="https://github.com/OpenSV/OpenSV">https://github.com/OpenSV/OpenSV</a>
-			<li><a href="https://github.com/mozilla/popcorn-js">https://github.com/mozilla/popcorn-js</a>
-			<li><a href="https://github.com/videojs/video.js">https://github.com/videojs/video.js</a>
-		</ul>
-	</p>
-	</body>
+<html lang="en" ng-app="OpenSVApp">
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.0rc3/angular-route.js"></script>
+		<script src="js/app.js"></script>
+	</head>
+	<div class="view-container">
+		<div ng-view class="view-frame"></div>
+	</div>
 </html>
 	
