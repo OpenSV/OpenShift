@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+     <head>
+       <script src="./app/js/Players/popcorn/popcorn.js"></script>
+        <script src="./app/js/Players/popcorn/plugins/footnote/popcorn.footnote.js"></script>
+       <script>
+         document.addEventListener( "DOMContentLoaded", function() {
+           var popcorn = Popcorn( "#ourvideo" );
+                popcorn.controls(true);
+           popcorn.footnote({
+             start: 2,
+             end: 5,
+             target: "footnote",
+             text: "Pop!"
+           });
+
+         }, false );
+       </script>
+     </head>
+     <body>
+       <video height="180" width="300" id="ourvideo">
+         <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.mp4">
+         <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.ogv">
+         <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.webm">
+       </video>
+       <div id="footnote"></div>
+    </body>
+ </html>

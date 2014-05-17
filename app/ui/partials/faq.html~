@@ -1,0 +1,13 @@
+<div class="container" fade-in>
+    <h1 class="text-center">FAQ</h1>
+
+    <div style="padding-top: 1em;">
+        <strong><h4>Q: What is OpenSV</h4></strong>
+
+        <p>OpenSV is an OpenSource Video platform</p>
+
+	<strong><h4>Q: Who is behind OpenSV</h4></strong>
+	<a href="http://www.appjacket.com">AppJacket, Inc.</a></br>
+	<a href="http://www.creativecontrol.tv">Creative Control</a>
+    </div>
+</div>

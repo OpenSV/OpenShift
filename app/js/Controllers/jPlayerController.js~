@@ -1,0 +1,19 @@
+/* Controller for video.js */
+var jPlayerModule = angular.module('jPlayerModule', ['angular.css.injector']);
+
+jPlayerModule.controller('jPlayerCssInjectorCtrl', function($scope, cssInjector){
+		cssInjector.add("/app/js/Players/jPlayer/skin/blue.monday/jplayer.blue.monday.css");
+});
+jPlayerModule.controller('jPlayerSetProperties',function($scope){
+	angular.element(document).ready(function(){
+		console.log("Document ready...");
+		$scope.jPlayer.ready: function () {
+		          $(this).jPlayer("setMedia", {
+		                title: "Big Buck Bunny Trailer",
+		                m4v: "http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v",
+		                ogv: "http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv",
+		                poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
+		          });
+	});
+});
+

@@ -1,8 +1,20 @@
 # require rubygems and sinatra so you can run this application locally with ruby app.rb
 require 'rubygems'
 require 'sinatra'
+set :bind, '0.0.0.0'
 
 get '/' do
+	send_file 'app/index.html'
+end
+get '/app/*' do
+	if("#{params[:splat][0]}".end_with?(".css"))
+		content_type "text/css"
+	elsif("#{params[:splat][0]}".end_with?(".js"))
+		content_type "application/javascript"
+	end
+        send_file "app/#{params[:splat][0]}"
+end
+get '/*' do
 	send_file 'app/index.html'
 end
 get '/jPlayer' do
@@ -14,7 +26,3 @@ end
 get '/videojs' do
 	send_file 'app/partials/videojs.html'
 end
-get '/*' do
-        send_file "#{params[:splat][0]}"
-end
-

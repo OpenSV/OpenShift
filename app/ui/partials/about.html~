@@ -1,0 +1,65 @@
+<div class="container" fade-in>
+
+    <h3>A place for all to get free tv</h3>
+    <hr>
+
+    <div class="row">
+      <div class="col-md-12">
+            <p style="margin-top:1em;">
+	    This is an OpenSource Video platform - OpenSV.  Imagine a tool where you can download and install your own node and setup a TV Station that gets integrated within a main broadcast network.  That, I think, is what OpenSV will become.  OpenSV.com will be the main distribution point for all OpenSV nodes in the network.  In addition to being linked into the OpenSV platform each node will behave on its own and will serve content to its own subset of viewers.  
+            </p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row" style="padding-top:1em;">
+
+        <div class="col-md-6">
+
+            <p>
+                <b>Integrated Technologies:</b>
+            </p>
+
+            <p>
+
+            <ul>
+		<li>jPlayer</li>
+		<li>videojs</li>
+		<li>javascript</li>
+		<li>html5</li>
+		<li>popcornjs</li>
+            </ul>
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div>
+
+        <br>
+
+        <p>
+            <b>Project goals:</b>
+        </p>
+
+        <p>
+
+        <ul>
+		<li>To become a place for all TV Viewers to get their content</li>
+		<li>To be freely redistributable</li>
+		<li>To be a self sustaining entity</li>
+		<li>To promote and enable the individual broadcaster and content creator</li>		
+        </ul>
+        </p>
+
+    </div>
+
+
+</div>
+
+
+
+

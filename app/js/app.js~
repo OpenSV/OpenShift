@@ -2,25 +2,18 @@
 
 /* App Module */
 
-var OpenSVApp = angular.module('OpenSVApp', [
-  'ngRoute'
-]);
+var OpenSVApp = angular.module('OpenSVApp',['ngRoute']);
 
-OpenSVApp.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-      when('/samples/jPlayer', {
-        templateUrl: 'partials/jPlayer.html'
-/*        controller: 'PhoneListCtrl'*/
-      }).
-      when('/samples/popcornjs', {
-        templateUrl: 'partials/popcornjs.html'
-/*        controller: 'PhoneDetailCtrl'*/
-      }).
-      when('/samples/videojs',{
-	      templateUrl: 'partials/videojs.html'
-      }).
-      otherwise({
-		templateUrl: 'partials/helloworld.html'
-      });
-  }]);
+OpenSVApp.config(function($routeProvider, $locationProvider) {
+	$routeProvider
+	.when('/',{templateUrl: '/app/partials/helloworld.html'})
+	.when('/samples/jPlayer',{templateUrl: '/app/partials/jPlayer.html'})
+	.when('/samples/videojs',{templateUrl: '/app/partials/videojs.html'})
+	.when('/login',{templateUrl: '/app/partials/login.html',controller: 'loginCtrl'})
+	.when('/test',{templateUrl: '/app/partials/test.html'})
+	.otherwise(redirectTo: '/');
+
+	if(window.history && window.history.pushState){
+	    $locationProvider.html5Mode(true);
+	}
+});

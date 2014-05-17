@@ -1,11 +1,20 @@
+<!DOCTYPE html>
 <html lang="en" ng-app="OpenSVApp">
 	<head>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.0rc3/angular-route.js"></script>
-		<script src="js/app.js"></script>
+
+	<link rel="stylesheet" href="/app/css/animations.css">
+
+	<script type="application/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="application/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.js"></script>
+	<script type="application/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-route.js"></script>
+	<script type="application/javascript" src="/app/js/app.js"></script>
+	<script type="application/javascript" src="/app/js/Players/video.js/minified.video.js"></script>
+	<script type="application/javascript" src="/app/js/Controllers/videojsController.js"></script>
+	<script type="application/javascript" src="/app/js/Controllers/userController.js"></script>
+	<script>videojs.options.flash.swf = "./app/js/Players/video.js/video-js.swf"</script>
+	
 	</head>
-	<div class="view-container">
-		<div ng-view class="view-frame"></div>
+	<div ng-view>
 	</div>
 </html>
 	
